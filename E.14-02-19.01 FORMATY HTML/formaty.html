@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Formatowanie</title>
+
+	<link rel="stylesheet" href="styl2.css">
+	<script>
+	
+	function formatuj(kolor)
+	{
+	let procenty=parseint(document.getElementById("procenty").value);
+	document.getElementById("cel_formatowania").style.fontsize=(procenty+"%");
+	//styl czcionki
+	let opcja=parseInt(document.getElementById("czcionka").value);
+	
+	switch(opcja)
+	{
+	case 1:
+	 document.getElementById("cel_formatowania").style.fontStyle="normal";
+	 break;
+	 case 2:
+	 document.getElementById("cel_formatowania").style.fontStyle="italic";
+	 break;
+	 }
+	 switch(kolor)
+	 { 
+	 case 1:
+	 document.getElementById("cel_formatowania").style.color="red"; 
+	 break;
+	 case 2:
+	
+	 document.getElementById("cel_formatowania").style.color="green"; 
+	 break;
+	 case 3:
+	 document.getElementById("cel_formatowania").style.color="blue"; 
+	 break;
+	 </script>
+	 
+	 
+	 
+	 
+	
+</head>
+
+<body>
+	<div id="baner">
+		<h1>Formatowanie dokumentów HTML</h1>
+	</div>
+	<div class="sm1">
+		<h2>Przykłady listy - hobby</h2>
+		<ul>
+			<li>muzyka</li>
+			<li>turystyka
+				<ol>
+					<li>góry</li>
+					<li>jeziora</li>
+					<li>na rowerze</li>
+				</ol>
+			</li>
+			<li>książki</li>
+		</ul>
+	</div>
+	<div class="sm2">
+		<h2>Przykład tabeli - rozkład dnia</h2>
+		<table>
+			<tr>
+				<th><b>Pora dnia</b></th>
+				<th><b>obowiązki</b></th>
+			</tr>
+			<tr>
+				<td>rano</td>
+				<td>nauka</td>
+			</tr>
+			<tr>
+				<td>południe</td>
+				<td>zajęcia dodatkowe</td>
+			</tr>
+			<tr>
+				<td>popołudnie</td>
+				<td rowspan="2">moje hobby</td>
+			</tr>
+			<tr>
+				<td>wieczór</td>
+			</tr>
+		</table>
+	</div>
+	<div class="sm3">
+		<img src="napisy.png" alt="technologia web">
+	</div>
+	<div class="main">
+		<p>Podaj rozmiar tekstu w procentach: <input type="number" id="value">%</p>
+		<p>
+			<select id="select">
+				<option>prosty</option>
+				<option>kursywa</option>
+			</select>
+
+		</p>
+		<p>Jakim kolorem sformatować tekst? Wybierz przycisk</p>
+		<input type="submit" id="red" value="" style="background-color:red;" onclick="red()">
+		<input type="submit" id="green" value="" style="background-color:green;" onclick="green()">
+		<input type="submit" id="blue" value="" style="background-color:blue;" onclick="blue()">
+		<p id="result">To jest przykład paragrafu, który może być dowolnie formatowany przez JavaScript</p>
+	</div>
+	<div class="footer">
+		<p>Formatowaniem tekstu zajmował się: <i>ASFADFGASGF</i> </p>
+		<a href="formatowanie.pl"></a>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
+
+<!-- Jan Kupczyk -->
