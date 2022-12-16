@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styl.css">
+  <title>malarz</title>
+</head>
+<body>
+  <div id="baner">
+    <a href="index.html"><h1>Koszty farby</h1></a>
+  </div>
+  <div id="lewy">
+    <h3>Mieszamy czy wyceniamy?</h3>
+    <a href="mieszamy.html">Mieszamy</a><br>
+    <a href="cena.html">Wyceniamy</a>
+  </div>
+  <div id="prawy">
+    <h3>Obliczanie na podstawie powierzchni zapotrzebowania na farbę</h3><br>
+    Podaj powierzchnię <input type="number" id="powierzchnia"><br>
+    <input type="button" value="Policz" onclick="licz()"><br>
+    Liczba jednolitrowych puszek farby potrzebnych do pomalowania wynosi: <span id="wynik"></span>
+    <script>
+      function licz(){
+        let a=document.getElementById("powierzchnia").value;
+        //document.getElementById("wynik").innerHTML=a;
+        //1 litr = 4m powierzchni
+        b=a/4;
+        document.getElementById("wynik").innerHTML=Math.ceil(b);;
+      }
+    </script>
+  </div>
+  <div id="stopka">
+    MALARZ <br>
+    Stronę opracował: 0004039043949
+  </div>
+</body>
+</html>

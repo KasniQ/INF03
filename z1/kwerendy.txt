@@ -1,0 +1,3 @@
+select cena from farby where kolor='niebieski';
+select kolor, (cena/pojemnosc) from farby;
+select farby.kolor from farby join malowanie on malowanie.id_farby=farby.id_farby where malowanie.id_pomieszczenia=3;
