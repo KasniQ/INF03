@@ -1,0 +1,4 @@
+Kwerenda 5: select id_pok, sum(liczba_dn) from rezerwacje group by id_pok;
+Kwerenda 6: select sum(liczba_dn) from rezerwacje where sezon='lato';
+Kwerenda 7: update pokoje set cena=cena*1.15;
+Kwerenda 8: CREATE USER 'najemca'@'localhost' IDENTIFIED VIA mysql_native_password USING 'n@JEM1@!';
