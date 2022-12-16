@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Szkoła Ponadgimnazjalna</title>
+    <link rel="stylesheet" href="tematy.css" id="style">
+</head>
+<body>
+   <div id="baner">
+    <h1>Oceny uczniów: język polski</h1>
+    <h3>Aktualnie zastosowany motyw to:<span id="wynik"></span></h3>
+   </div>
+   <div id="lewy">
+    <h2>Lista tematów:</h2>
+    <ol>
+        <li  onmouseover="czerw()" onmouseout="niepokazuj()">czerwony,</li>
+        <li onmouseover="ziel()" onmouseout="niepokazuj()">zielony,</li>
+        <li onmouseover="szar()" onmouseout="niepokazuj()">szary</li>
+    </ol>
+<hr>
+    <form id="tem">
+        <input type="radio" name="temat" id="czerwony"value="red">Czerwony
+        <input type="radio" name="temat" id="zielony"value="green">Zielony
+        <input type="radio" name="temat" id="szary" value="gray">Szary </br>
+        <input type="button" onclick="zmiana()" value="Zmień temat">
+    </form>
+    <hr>
+    <input type="reset" onclick="reset()" value="Reset tematu">
+   </div>
+   <div id="prawy">
+    <img src="1.png" id="cz" class="obrazek" ><img src="2.png" id="zi" class="obrazek"><img src="3.png" id="sz" class="obrazek">
+
+   </div>
+   <div id="stopka">
+    Ostatnia modyfikacja strony:
+   </div>
+   <script>
+    let czerwony=document.getElementById("cz");
+    let zielony=document.getElementById("zi");
+    let szary=document.getElementById("sz");
+    function czerw(){
+        
+        czerwony.style.display="flex";
+    }
+    function ziel(){
+        
+        zielony.style.display="flex";
+    }
+    function szar(){
+        
+        szary.style.display="flex";
+    }
+    function niepokazuj(){
+        czerwony.style.display="none";
+        zielony.style.display="none";
+        szary.style.display="none";
+    }
+    let b=document.getElementById("baner");
+    let l=document.getElementById("lewy");
+    let p=document.getElementById("prawy");
+    let s=document.getElementById("stopka");
+    
+    function zmiana(){
+        let t=document.getElementsByName("temat");
+        let c=document.getElementById("czerwony");
+        let z=document.getElementById("zielony");
+        let sz=document.getElementById("szary");
+         for(let i=0;i<t.length;i++){
+            if (z.checked){
+                b.style.backgroundColor="#16a085";
+                l.style.backgroundColor="#1abc9c";
+                p.style.backgroundColor="#2ecc71";
+                s.style.backgroundColor="#16a085";
+                document.getElementById("wynik").innerHTML="zielony";
+            }
+            if (c.checked){
+                b.style.backgroundColor="#c0392b";
+                l.style.backgroundColor="#d35400";
+                p.style.backgroundColor="#e67e22";
+                s.style.backgroundColor="#c0392b";
+                document.getElementById("wynik").innerHTML="czerwony";
+            }
+            if (sz.checked){
+                b.style.backgroundColor="#7f8c8d";
+                l.style.backgroundColor="#bdc3c7";
+                p.style.backgroundColor="#ecf0f1";
+                s.style.backgroundColor="#7f8c8d";
+                document.getElementById("wynik").innerHTML="szary";
+            }
+
+        }
+       
+    }
+    function reset(){
+            b.style.backgroundColor="#3a7ad9";
+            l.style.backgroundColor="#5d93e2";
+            p.style.backgroundColor="#88b0ec";
+            s.style.backgroundColor="#3a7ad9"; 
+            document.getElementById("wynik").innerHTML="";
+            }
+   </script>
+
+</body>
+</html>

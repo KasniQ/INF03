@@ -1,0 +1,26 @@
+#baner{
+    text-align:center;
+    height:50px;
+    background-color: #3a7ad9;
+}
+#lewy{
+    height:400px;
+    width:30%;
+    background-color: #5d93e2;
+    float:left;
+}
+#prawy{
+    height:400px;
+    width:70%;
+    background-color: #88b0ec;
+    float:left;
+}
+#stopka{
+    text-align:right;
+    background-color: #3a7ad9;
+    clear:both;
+}
+img{
+    
+    display:none;
+}
