@@ -1,0 +1,5 @@
+CREATE TABLE `sklep`.`zamowienia` (`id` INT UNSIGNED NOT NULL , `imie` TEXT NULL DEFAULT NULL , `nazwisko` TEXT NULL DEFAULT NULL , `adres_email` TEXT NULL DEFAULT NULL , `liczba_choinek` INT NULL DEFAULT NULL , `liczba_mikolajow` INT NULL DEFAULT NULL , `liczba_reniferow` INT NULL DEFAULT NULL , `info` BOOLEAN NULL DEFAULT NULL );
+ALTER TABLE `zamowienia` ADD PRIMARY KEY(`id`);
+CREATE USER 'klient'@'localhost' IDENTIFIED VIA mysql_native_password USING 'klient123';GRANT USAGE ON *.* TO 'klient'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+GRANT INSERT ON `sklep`.* TO 'klient'@'localhost';
+insert into zamowienia values (1,'Jan','Kowalski','jKowalski@poczta.pl',NULL,NULL,NULL,NULL);

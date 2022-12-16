@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+    <title>Sklep</title>
+</head>
+<body>
+    <div id="baner">
+        <h1>Ozdoby - sklep</h1>
+    </div>
+    <div id="lewy">
+        <h2>OZDOBY</h2>
+        <a href="galeria.html">Galeria</a><br>
+        <a href="zamowienie.php">Zamówienie</a>
+    </div>
+    <div id="srodkowy">
+        <img src="choinka.jpg" alt="ozdoby choinkowe" onmouseover="poka1()" onmouseleave="chowaj()">
+        <img src="mikolaj.jpg" alt="ozdoby choinkowe" onmouseover="poka2()" onmouseleave="chowaj()">
+        <img src="renifer.jpg" alt="ozdoby choinkowe" onmouseover="poka3()" onmouseleave="chowaj()"><br>
+        <p>Wybierz ozdobę w kółku</p>
+        <p id="wynik"></p>
+    </div>
+    <div id="prawy">
+        <img src="animacja.gif">
+    </div>
+    <div id="stopka">
+        <h3>Autor strony: SZCZĘSNY KRÓL</h3>
+    </div>
+    <script>
+        function poka1(){
+            document.querySelector('#wynik').innerHTML="Wybrałeś choinkę. Cena 10zł"
+            document.querySelector('#wynik').style.visibility='visible';
+        }
+        function chowaj(){
+            document.querySelector('#wynik').style.visibility='hidden';
+        }
+        function poka2(){
+            document.querySelector('#wynik').innerHTML="Wybrałeś mikołaja. Cena 12zł"
+            document.querySelector('#wynik').style.visibility='visible';
+        }
+        function poka3(){
+            document.querySelector('#wynik').innerHTML="Wybrałeś renifera. Cena 8zł"
+            document.querySelector('#wynik').style.visibility='visible';
+        }
+    </script>
+</body>
+</html>
