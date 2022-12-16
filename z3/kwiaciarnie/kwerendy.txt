@@ -1,0 +1,3 @@
+Kwerenda 1: SELECT nazwa,ulica FROM `kwiaciarnie` where miasto="malbork";
+Kwerenda 2: select id_zam from zamowienia where data='07.01.2017';
+Kwerenda 3: SELECT id_kwiaciarni, count(id_kwiaciarni) from zamowienia group by id_kwiaciarni;
