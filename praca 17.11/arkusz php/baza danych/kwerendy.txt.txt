@@ -1,0 +1,8 @@
+select imie, nazwisko ,opis, zdjecie from osoby where Hobby_id in (1,2,6);
+SELECT osoby.id, osoby.zdjecie from osoby join hobby h on osoby.id=h.id where rok_urodzenia>2000;
+select id, zdjecie from osoby where imie="Monika" limit 5;
+CREATE TABLE `dane`.`wpisy` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT , `wpis` TEXT, `uzytkownik_id` INT UNSIGNED NOT NULL , PRIMARY KEY (`id`));
+
+
+
+select distinct imie, nazwisko ,opis, zdjecie from osoby where Hobby_id in (1,2,6)

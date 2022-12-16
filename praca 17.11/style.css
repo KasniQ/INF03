@@ -1,0 +1,46 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#baner{
+    background-color: #005B4f;
+    font-size:50%;
+    height:20px;
+    color:white;
+    text-align:center;
+}
+#glowny{
+    background-color: #e1e2e1;
+    height:400px;
+    padding:20px;
+    overflow:scroll;
+    hyphens: auto;
+
+}
+#zdjecie{
+    width:20%;
+    float:left;
+}
+#opis{
+    float:left;
+}
+#linia{
+    clear:both;
+}
+#stopkal, #stopkap{
+    background-color: #005b4f;
+    text-align:center;
+    width:50%;
+    height:20px;
+    float:left;
+}
+img{
+    padding:20px;
+    border-radius:100%;
+}
+h2{
+    text-align:center;
+    background-color: #00897b;
+}
+a{
+    color:white;
+}
