@@ -1,0 +1,4 @@
+Kwerenda 1:SELECT miesiac,rok FROM `zadania` WHERE miesiac='lipiec';
+Kwerenda 2:SELECT dataZadania, wpis FROM `zadania` WHERE miesiac='lipiec';
+Kwerenda 3:SELECT distinct miesiac from zadania where miesiac like 'l%';
+Kwerenda 4:UPDATE `zadania` SET `wpis` = 'Wycieczka: jezioro' WHERE `dataZadania` like '2020%07%13';

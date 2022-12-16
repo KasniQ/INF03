@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#baner1{
+    background-color: #483d8b;
+    height:150px;
+    width:30%;
+    float:left;
+}
+#baner2{
+    background-color: #483d8b;
+    color:white;
+    height:150px;
+    width:70%;
+    float:left;
+}
+#glowy{
+    clear:both;
+}
+.skrypt{
+    background-color: #AFEEEE;
+    width:150px;
+    height:100px;
+    margin:3px;
+    border:1px solid;
+    float:left;
+}
+#stopka{
+    background-color: #483d8b;
+    color:white;
+    padding:10px;
+    clear:both;
+}
+h5{
+    text-align: center;
+}
