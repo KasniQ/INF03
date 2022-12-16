@@ -1,0 +1,4 @@
+Kwerenda 1: select id,dataWyjazdu,cel from wycieczki where dostepna=1; 
+Kwerenda 2: select nazwaPliku, podpis from zdjecia order by podpis asc;
+Kwerenda 3: select zdjecia.nazwaPliku, wycieczki.cel from zdjecia join wycieczki on wycieczki.id=zdjecia.id where wycieczki.cena>1000;
+Kwerenda 4: alter table wycieczki add dataPrzyjazdu date after dataWyjazdu;
