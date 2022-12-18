@@ -1,0 +1,7 @@
+Kwerenda 1:INSERT INTO `karty_wedkarskie` VALUES (NULL, 'Grzegorz', 'Niemczyk', 'Gdynia, Batorego 14/5', '2018-02-23', '0');
+
+Kwerenda 2: SELECT imie, nazwisko from karty_wedkarskie where punkty>20;
+
+Kwerenda 3:select lowisko.akwen from lowisko join zawody_wedkarskie on zawody_wedkarskie.Lowisko_id=lowisko.id where sedzia="Krzysztof Dobrowolski";
+
+Kwerenda 4:create user "anna"@"localhost" identified by "anna123";
