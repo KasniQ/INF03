@@ -1,0 +1,4 @@
+Kwerenda 1: CREATE TABLE `psy`.`uzytkownicy` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT , `login` TEXT NOT NULL , `haslo` TEXT NOT NULL , PRIMARY KEY (`id`));
+Kwerenda 2:insert into uzytkownicy values (NULL,'Grzegorz', 'g');
+Kwerenda 3:SELECT login FROM `uzytkownicy`;
+Kwerenda 4:SELECT id, login from uzytkownicy where haslo like "4%";
