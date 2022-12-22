@@ -1,0 +1,4 @@
+Kwerenda 1:insert into ratownicy values (NULL, 20, "Adam Nowak", "Jan Kowalski", "Anna Nowakowska");
+Kwerenda 2:SELECT id, adres, ratownicy_id from zgloszenia where dyspozytorzy_id=4;
+Kwerenda 3:create user 'adam'@'localhost' identified by "Adam6&";
+Kwerenda 4:GRANT CREATE, ALTER, DROP ON `ee09`.`ratownicy` TO 'adam'@'localhost';
