@@ -1,0 +1,4 @@
+Kwerenda 1:select haslo from uzytkownicy where login like "Justyna";
+Kwerenda 2:select count(*) from dane;
+Kwerenda 3:select uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie from uzytkownicy join dane on dane.id=uzytkownicy.id where login like "Justyna";
+Kwerenda 4:ALTER TABLE `dane` ADD `stanowisko` TEXT;
